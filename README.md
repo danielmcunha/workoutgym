@@ -1,32 +1,62 @@
-WorkoutApp é um aplicativo desenvolvido para acompanhar e gerenciar treinos de usuários, ideal para personal trainers e seus alunos. O app permite o registro, gerenciamento e acompanhamento de rotinas de treino, com funcionalidades para agendamento, customização de exercícios e rastreamento de progresso.
+# WorkoutApp
 
-Tecnologias Utilizadas
-Kotlin Multiplatform Mobile (KMM): Utilizado para garantir a compatibilidade e compartilhamento de código entre plataformas Android e iOS. Com KMM, a maior parte da lógica de negócio é compartilhada, garantindo consistência entre as versões do aplicativo para ambas as plataformas.
+**WorkoutApp** é um aplicativo projetado para personal trainers e alunos, visando o acompanhamento e gerenciamento de treinos. Com funcionalidades de criação e organização de exercícios, agendamento de treinos e rastreamento de progresso, este app proporciona uma experiência completa para a gestão de rotinas de treino.
 
-Jetpack Compose: Framework moderno de UI para Android, utilizado para criar interfaces de usuário nativas de forma declarativa e eficiente. Compose facilita o desenvolvimento de interfaces responsivas e intuitivas com menos código e mais flexibilidade.
+## Tecnologias Utilizadas
 
-Firebase: Para armazenamento de dados em tempo real, autenticação e sincronização de dados entre dispositivos. O app usa Firestore para armazenar informações dos treinos, usuários e histórico de atividades.
+### 🛠 **Kotlin Multiplatform Mobile (KMM)**
+O **KMM** é utilizado para garantir a compatibilidade entre as plataformas **Android** e **iOS**. A maior parte da lógica de negócio é compartilhada entre as duas plataformas, proporcionando consistência e eficiência no desenvolvimento.
 
-Kotlin: Linguagem de programação moderna que proporciona concisão e segurança, sendo a base para o desenvolvimento do projeto tanto para Android quanto para o código compartilhado em KMM.
+### 📱 **Jetpack Compose**
+O **Jetpack Compose** foi utilizado para o desenvolvimento da interface de usuário no Android, oferecendo uma maneira moderna e declarativa de criar UIs, com menos código e maior flexibilidade.
 
-Funcionalidades
-Cadastro e Login de Usuários: Os usuários podem se cadastrar e fazer login para acessar suas informações personalizadas.
+### ☁️ **Firebase**
+O **Firebase** é usado para o armazenamento em tempo real dos dados dos usuários, treinos e exercícios. Ele também é responsável pela autenticação e pela sincronização de dados entre dispositivos.
 
-Criação e Gerenciamento de Exercícios: O usuário pode criar, editar e organizar exercícios, com possibilidade de customizar séries, repetições e pesos.
+### 💻 **Kotlin**
+A linguagem **Kotlin** é a base de todo o código do projeto, proporcionando concisão, segurança e interoperabilidade entre as plataformas Android e iOS.
 
-Listagem e Edição de Treinos: O app oferece uma tela de listagem dos treinos, onde o usuário pode visualizar detalhes, reordenar e editar exercícios.
+## Funcionalidades
 
-Relatórios de treino: O app tem a possibilidade de visualizar relatórios de treinos passados, com gráficos e histórico das execuções
+- **Cadastro e Login de Usuários**
+  - Permite que usuários se cadastrem e façam login para acessar suas informações e treinos personalizados.
 
-Agendamento de Treinos: Personal trainers podem agendar treinos para seus alunos, definindo a frequência e a localização dos compromissos.
+- **Criação e Gerenciamento de Exercícios**
+  - O usuário pode criar, editar e organizar exercícios, configurando séries, repetições e pesos.
 
-Recorrência de Treinos: O app permite definir a recorrência dos treinos (diária, semanal, etc.), otimizando o planejamento de longo prazo.
+- **Listagem e Edição de Treinos**
+  - Tela de listagem de treinos com funcionalidades de visualização, edição e reorganização dos exercícios.
 
-Persistência de Dados: Toda a informação do treino, progresso do aluno e configurações do usuário são salvas no Firebase, permitindo sincronização em tempo real e armazenamento seguro.
+- **Agendamento de Treinos**
+  - Permite que personal trainers agendem treinos para seus alunos, com opções de definir a frequência e localização do compromisso.
 
-Funcionalidades em Desenvolvimento
-Funcionalidade de Notificações: Alertas e lembretes para os treinos agendados.
+- **Recorrência de Treinos**
+  - Definição de recorrência para treinos, como treinos diários ou semanais, otimizando o planejamento a longo prazo.
 
-Análises e Relatórios: Visualização do progresso de treinos e comparação de desempenho.
+- **Persistência de Dados**
+  - Todos os dados do treino e histórico de progressos são salvos no **Firebase**, permitindo a sincronização em tempo real entre dispositivos.
 
-Integração com Wearables: Futuras integrações com dispositivos vestíveis para monitoramento em tempo real (ex: frequência cardíaca, calorias queimadas).
+## Funcionalidades Futuras
+
+- **Notificações**
+  - Implementação de lembretes e notificações para os treinos agendados.
+
+- **Análises e Relatórios**
+  - Geração de gráficos e relatórios para monitoramento do progresso dos treinos.
+
+- **Integração com Wearables**
+  - Futuras integrações com dispositivos vestíveis para monitoramento em tempo real (ex: frequência cardíaca, calorias queimadas).
+
+## Como Rodar o Projeto
+
+### Pré-requisitos
+
+- **Android Studio** ou **Xcode** (para iOS)
+- **Conta no Firebase** para configurar autenticação e Firestore
+
+### Rodando no Android
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/usuario/workout-app.git
+   cd workout-app
